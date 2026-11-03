@@ -1,0 +1,376 @@
+/*mengatur seluruh halaman*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Header */
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+    background-color: #176b5b;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+header h1{
+    margin: 0;
+    font-size: 30px;
+}
+
+header p{
+    margin: 10px 0 0;
+    font-size: 16px;
+}
+
+/*navigasi*/
+
+nav{
+    position: sticky;
+    top: 83px;
+    z-index: 900;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-height: 60px;
+
+    background-color: white;
+    gap: 20px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+/*menu navigasi*/
+nav a{
+    margin: 0;
+    padding: 10px 20px;
+
+    font-weight: bold;
+    color:#176b5b;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* efek ketika mouse diarahkan*/
+nav a:hover{
+    background-color: #176b5b;
+    color: white;
+}
+
+/*main*/
+
+main{
+    width: 90%;
+    margin: 20px auto;
+    
+    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
+}
+
+/*sidebar*/
+
+aside{
+    width: 30%;
+    min-height: 500px;
+
+    background-color: white;
+
+    padding: 20px;
+    border-radius: 12px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+aside h3{
+    color:#176b5b;
+    margin-top: 0;
+    border-bottom: 2px solid #176b5b;
+    padding-bottom: 10px;
+}
+
+aside p{
+    padding: 20px;
+    margin: 8px 0;
+    border-radius: 8px;
+    background-color: #f0f5f3;
+    cursor: pointer;
+}
+
+aside p:hover{
+    background-color: #176b5b;
+    color: white;
+}
+
+/*content*/
+
+section{
+    width: 70%;
+    min-height: 500px;
+
+    background-color: white;
+
+    padding: 35px;
+    border-radius: 12px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+section h2{
+    color:#176b5b;
+    font-size: 28px;
+}
+
+section p{
+    line-height: 1.7;
+}
+
+/*footer*/
+
+footer{
+    text-align: center;
+    background-color: #176b5b;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+footer p{
+    margin: 2px;
+}
+
+/* card content */
+.card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+/* card */
+.card{
+    position: relative;
+    z-index: 1;
+    width: 30%;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* gambar card */
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* isi card */
+.card h3{
+    color:#176b5b;
+    margin: 15px 15px 8px;
+}
+
+.card p{
+    padding: 0 15px 15px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* efek card*/
+.card:hover{
+    position: relative;
+    z-index: 10;
+    transform: translateY(-5px);
+    transition: 0.3s
+}
+
+/* footer */
+footer {
+    background-color: #176b5b;
+    color: rgb(249, 248, 248);
+    margin-top: 30px;
+    width: 100%;
+}
+
+/*bagian footer*/
+.footer-content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+/* informasi footer*/
+.footer-info {
+    width: 50%;
+}
+
+.footer-info h3{
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.footer-info p {
+    margin: 8px 0;
+}
+ 
+/* sosial media */
+.sosial-media{
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.sosial-media{
+
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    margin-right: 10px;
+
+}
+
+/* item sosial media */
+.sosial-item {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* icon sosial media */
+.social-item img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 20%;
+}
+
+/* nama media */
+.social-item p {
+    margin: 5px 0 0;
+    font-size: 12px;
+}
+
+.social-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* footer bawah */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    /* NAVIGASI */
+    nav {
+        top: 90px;
+        flex-wrap: wrap;
+        min-height: auto;
+        padding: 10px;
+        gap: 5px;
+    }
+
+    nav p {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    /* MAIN */
+    main {
+        width: 95%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* SIDEBAR */
+    aside {
+        width: 100%;
+        min-height: auto;
+    }
+
+    /* CONTENT */
+    section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 23px;
+    }
+
+    /* CARD */
+    .card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .card {
+        width: calc(50% - 10px);
+    }
+
+    /* FOOTER */
+    .footer-content {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .footer-info {
+        width: 100%;
+    }
+
+    /* SOCIAL MEDIA */
+    .sosial-media {
+        position: static;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
